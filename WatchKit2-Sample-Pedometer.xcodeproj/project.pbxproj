@@ -1,0 +1,549 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0D41C0201B6E264500CBEB92 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D41C01F1B6E264500CBEB92 /* AppDelegate.swift */; };
+		0D41C0221B6E264500CBEB92 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D41C0211B6E264500CBEB92 /* ViewController.swift */; };
+		0D41C0251B6E264500CBEB92 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D41C0231B6E264500CBEB92 /* Main.storyboard */; };
+		0D41C0271B6E264500CBEB92 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D41C0261B6E264500CBEB92 /* Assets.xcassets */; };
+		0D41C02A1B6E264500CBEB92 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D41C0281B6E264500CBEB92 /* LaunchScreen.storyboard */; };
+		0D41C02F1B6E264500CBEB92 /* WatchKit2-Sample-Pedometer WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 0D41C02E1B6E264500CBEB92 /* WatchKit2-Sample-Pedometer WatchKit App.app */; };
+		0D41C0351B6E264500CBEB92 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D41C0331B6E264500CBEB92 /* Interface.storyboard */; };
+		0D41C0371B6E264500CBEB92 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D41C0361B6E264500CBEB92 /* Assets.xcassets */; };
+		0D41C03E1B6E264500CBEB92 /* WatchKit2-Sample-Pedometer WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 0D41C03D1B6E264500CBEB92 /* WatchKit2-Sample-Pedometer WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		0D41C0431B6E264500CBEB92 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D41C0421B6E264500CBEB92 /* InterfaceController.swift */; };
+		0D41C0451B6E264500CBEB92 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D41C0441B6E264500CBEB92 /* ExtensionDelegate.swift */; };
+		0D41C0471B6E264500CBEB92 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D41C0461B6E264500CBEB92 /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0D41C0301B6E264500CBEB92 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0D41C0141B6E264500CBEB92 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0D41C02D1B6E264500CBEB92;
+			remoteInfo = "WatchKit2-Sample-Pedometer WatchKit App";
+		};
+		0D41C03F1B6E264500CBEB92 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0D41C0141B6E264500CBEB92 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0D41C03C1B6E264500CBEB92;
+			remoteInfo = "WatchKit2-Sample-Pedometer WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		0D41C04E1B6E264500CBEB92 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				0D41C03E1B6E264500CBEB92 /* WatchKit2-Sample-Pedometer WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0D41C0521B6E264500CBEB92 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				0D41C02F1B6E264500CBEB92 /* WatchKit2-Sample-Pedometer WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0D41C01C1B6E264500CBEB92 /* WatchKit2-Sample-Pedometer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "WatchKit2-Sample-Pedometer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0D41C01F1B6E264500CBEB92 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		0D41C0211B6E264500CBEB92 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		0D41C0241B6E264500CBEB92 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0D41C0261B6E264500CBEB92 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0D41C0291B6E264500CBEB92 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		0D41C02B1B6E264500CBEB92 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0D41C02E1B6E264500CBEB92 /* WatchKit2-Sample-Pedometer WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "WatchKit2-Sample-Pedometer WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0D41C0341B6E264500CBEB92 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		0D41C0361B6E264500CBEB92 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0D41C0381B6E264500CBEB92 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0D41C03D1B6E264500CBEB92 /* WatchKit2-Sample-Pedometer WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "WatchKit2-Sample-Pedometer WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0D41C0421B6E264500CBEB92 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		0D41C0441B6E264500CBEB92 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		0D41C0461B6E264500CBEB92 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0D41C0481B6E264500CBEB92 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0D41C0191B6E264500CBEB92 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0D41C03A1B6E264500CBEB92 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0D41C0131B6E264500CBEB92 = {
+			isa = PBXGroup;
+			children = (
+				0D41C01E1B6E264500CBEB92 /* WatchKit2-Sample-Pedometer */,
+				0D41C0321B6E264500CBEB92 /* WatchKit2-Sample-Pedometer WatchKit App */,
+				0D41C0411B6E264500CBEB92 /* WatchKit2-Sample-Pedometer WatchKit Extension */,
+				0D41C01D1B6E264500CBEB92 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0D41C01D1B6E264500CBEB92 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0D41C01C1B6E264500CBEB92 /* WatchKit2-Sample-Pedometer.app */,
+				0D41C02E1B6E264500CBEB92 /* WatchKit2-Sample-Pedometer WatchKit App.app */,
+				0D41C03D1B6E264500CBEB92 /* WatchKit2-Sample-Pedometer WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0D41C01E1B6E264500CBEB92 /* WatchKit2-Sample-Pedometer */ = {
+			isa = PBXGroup;
+			children = (
+				0D41C01F1B6E264500CBEB92 /* AppDelegate.swift */,
+				0D41C0211B6E264500CBEB92 /* ViewController.swift */,
+				0D41C0231B6E264500CBEB92 /* Main.storyboard */,
+				0D41C0261B6E264500CBEB92 /* Assets.xcassets */,
+				0D41C0281B6E264500CBEB92 /* LaunchScreen.storyboard */,
+				0D41C02B1B6E264500CBEB92 /* Info.plist */,
+			);
+			path = "WatchKit2-Sample-Pedometer";
+			sourceTree = "<group>";
+		};
+		0D41C0321B6E264500CBEB92 /* WatchKit2-Sample-Pedometer WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				0D41C0331B6E264500CBEB92 /* Interface.storyboard */,
+				0D41C0361B6E264500CBEB92 /* Assets.xcassets */,
+				0D41C0381B6E264500CBEB92 /* Info.plist */,
+			);
+			path = "WatchKit2-Sample-Pedometer WatchKit App";
+			sourceTree = "<group>";
+		};
+		0D41C0411B6E264500CBEB92 /* WatchKit2-Sample-Pedometer WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				0D41C0421B6E264500CBEB92 /* InterfaceController.swift */,
+				0D41C0441B6E264500CBEB92 /* ExtensionDelegate.swift */,
+				0D41C0461B6E264500CBEB92 /* Assets.xcassets */,
+				0D41C0481B6E264500CBEB92 /* Info.plist */,
+			);
+			path = "WatchKit2-Sample-Pedometer WatchKit Extension";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0D41C01B1B6E264500CBEB92 /* WatchKit2-Sample-Pedometer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0D41C0531B6E264500CBEB92 /* Build configuration list for PBXNativeTarget "WatchKit2-Sample-Pedometer" */;
+			buildPhases = (
+				0D41C0181B6E264500CBEB92 /* Sources */,
+				0D41C0191B6E264500CBEB92 /* Frameworks */,
+				0D41C01A1B6E264500CBEB92 /* Resources */,
+				0D41C0521B6E264500CBEB92 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0D41C0311B6E264500CBEB92 /* PBXTargetDependency */,
+			);
+			name = "WatchKit2-Sample-Pedometer";
+			productName = "WatchKit2-Sample-Pedometer";
+			productReference = 0D41C01C1B6E264500CBEB92 /* WatchKit2-Sample-Pedometer.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0D41C02D1B6E264500CBEB92 /* WatchKit2-Sample-Pedometer WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0D41C04F1B6E264500CBEB92 /* Build configuration list for PBXNativeTarget "WatchKit2-Sample-Pedometer WatchKit App" */;
+			buildPhases = (
+				0D41C02C1B6E264500CBEB92 /* Resources */,
+				0D41C04E1B6E264500CBEB92 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0D41C0401B6E264500CBEB92 /* PBXTargetDependency */,
+			);
+			name = "WatchKit2-Sample-Pedometer WatchKit App";
+			productName = "WatchKit2-Sample-Pedometer WatchKit App";
+			productReference = 0D41C02E1B6E264500CBEB92 /* WatchKit2-Sample-Pedometer WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		0D41C03C1B6E264500CBEB92 /* WatchKit2-Sample-Pedometer WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0D41C04B1B6E264500CBEB92 /* Build configuration list for PBXNativeTarget "WatchKit2-Sample-Pedometer WatchKit Extension" */;
+			buildPhases = (
+				0D41C0391B6E264500CBEB92 /* Sources */,
+				0D41C03A1B6E264500CBEB92 /* Frameworks */,
+				0D41C03B1B6E264500CBEB92 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "WatchKit2-Sample-Pedometer WatchKit Extension";
+			productName = "WatchKit2-Sample-Pedometer WatchKit Extension";
+			productReference = 0D41C03D1B6E264500CBEB92 /* WatchKit2-Sample-Pedometer WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0D41C0141B6E264500CBEB92 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = XuQing1001;
+				TargetAttributes = {
+					0D41C01B1B6E264500CBEB92 = {
+						CreatedOnToolsVersion = 7.0;
+					};
+					0D41C02D1B6E264500CBEB92 = {
+						CreatedOnToolsVersion = 7.0;
+					};
+					0D41C03C1B6E264500CBEB92 = {
+						CreatedOnToolsVersion = 7.0;
+					};
+				};
+			};
+			buildConfigurationList = 0D41C0171B6E264500CBEB92 /* Build configuration list for PBXProject "WatchKit2-Sample-Pedometer" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0D41C0131B6E264500CBEB92;
+			productRefGroup = 0D41C01D1B6E264500CBEB92 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0D41C01B1B6E264500CBEB92 /* WatchKit2-Sample-Pedometer */,
+				0D41C02D1B6E264500CBEB92 /* WatchKit2-Sample-Pedometer WatchKit App */,
+				0D41C03C1B6E264500CBEB92 /* WatchKit2-Sample-Pedometer WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0D41C01A1B6E264500CBEB92 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0D41C02A1B6E264500CBEB92 /* LaunchScreen.storyboard in Resources */,
+				0D41C0271B6E264500CBEB92 /* Assets.xcassets in Resources */,
+				0D41C0251B6E264500CBEB92 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0D41C02C1B6E264500CBEB92 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0D41C0371B6E264500CBEB92 /* Assets.xcassets in Resources */,
+				0D41C0351B6E264500CBEB92 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0D41C03B1B6E264500CBEB92 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0D41C0471B6E264500CBEB92 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0D41C0181B6E264500CBEB92 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0D41C0221B6E264500CBEB92 /* ViewController.swift in Sources */,
+				0D41C0201B6E264500CBEB92 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0D41C0391B6E264500CBEB92 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0D41C0451B6E264500CBEB92 /* ExtensionDelegate.swift in Sources */,
+				0D41C0431B6E264500CBEB92 /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0D41C0311B6E264500CBEB92 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0D41C02D1B6E264500CBEB92 /* WatchKit2-Sample-Pedometer WatchKit App */;
+			targetProxy = 0D41C0301B6E264500CBEB92 /* PBXContainerItemProxy */;
+		};
+		0D41C0401B6E264500CBEB92 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0D41C03C1B6E264500CBEB92 /* WatchKit2-Sample-Pedometer WatchKit Extension */;
+			targetProxy = 0D41C03F1B6E264500CBEB92 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		0D41C0231B6E264500CBEB92 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0D41C0241B6E264500CBEB92 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		0D41C0281B6E264500CBEB92 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0D41C0291B6E264500CBEB92 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		0D41C0331B6E264500CBEB92 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0D41C0341B6E264500CBEB92 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0D41C0491B6E264500CBEB92 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0D41C04A1B6E264500CBEB92 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0D41C04C1B6E264500CBEB92 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "WatchKit2-Sample-Pedometer WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "XuQing1001.WatchKit2-Sample-Pedometer.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		0D41C04D1B6E264500CBEB92 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "WatchKit2-Sample-Pedometer WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "XuQing1001.WatchKit2-Sample-Pedometer.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		0D41C0501B6E264500CBEB92 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = WatchKit2_Sample_Pedometer_WatchKit_Extension;
+				INFOPLIST_FILE = "WatchKit2-Sample-Pedometer WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "XuQing1001.WatchKit2-Sample-Pedometer.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		0D41C0511B6E264500CBEB92 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = WatchKit2_Sample_Pedometer_WatchKit_Extension;
+				INFOPLIST_FILE = "WatchKit2-Sample-Pedometer WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "XuQing1001.WatchKit2-Sample-Pedometer.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		0D41C0541B6E264500CBEB92 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "WatchKit2-Sample-Pedometer/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "XuQing1001.WatchKit2-Sample-Pedometer";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		0D41C0551B6E264500CBEB92 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "WatchKit2-Sample-Pedometer/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "XuQing1001.WatchKit2-Sample-Pedometer";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0D41C0171B6E264500CBEB92 /* Build configuration list for PBXProject "WatchKit2-Sample-Pedometer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0D41C0491B6E264500CBEB92 /* Debug */,
+				0D41C04A1B6E264500CBEB92 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0D41C04B1B6E264500CBEB92 /* Build configuration list for PBXNativeTarget "WatchKit2-Sample-Pedometer WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0D41C04C1B6E264500CBEB92 /* Debug */,
+				0D41C04D1B6E264500CBEB92 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		0D41C04F1B6E264500CBEB92 /* Build configuration list for PBXNativeTarget "WatchKit2-Sample-Pedometer WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0D41C0501B6E264500CBEB92 /* Debug */,
+				0D41C0511B6E264500CBEB92 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		0D41C0531B6E264500CBEB92 /* Build configuration list for PBXNativeTarget "WatchKit2-Sample-Pedometer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0D41C0541B6E264500CBEB92 /* Debug */,
+				0D41C0551B6E264500CBEB92 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0D41C0141B6E264500CBEB92 /* Project object */;
+}
