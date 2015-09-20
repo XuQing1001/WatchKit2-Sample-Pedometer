@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0D040C021B7722D1009C7510 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D040C011B7722D1009C7510 /* CoreMotion.framework */; };
 		0D41C0201B6E264500CBEB92 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D41C01F1B6E264500CBEB92 /* AppDelegate.swift */; };
 		0D41C0221B6E264500CBEB92 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D41C0211B6E264500CBEB92 /* ViewController.swift */; };
 		0D41C0251B6E264500CBEB92 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D41C0231B6E264500CBEB92 /* Main.storyboard */; };
@@ -16,7 +17,7 @@
 		0D41C0351B6E264500CBEB92 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D41C0331B6E264500CBEB92 /* Interface.storyboard */; };
 		0D41C0371B6E264500CBEB92 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D41C0361B6E264500CBEB92 /* Assets.xcassets */; };
 		0D41C03E1B6E264500CBEB92 /* WatchKit2-Sample-Pedometer WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 0D41C03D1B6E264500CBEB92 /* WatchKit2-Sample-Pedometer WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		0D41C0431B6E264500CBEB92 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D41C0421B6E264500CBEB92 /* InterfaceController.swift */; };
+		0D41C0431B6E264500CBEB92 /* PedometerInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D41C0421B6E264500CBEB92 /* PedometerInterfaceController.swift */; };
 		0D41C0451B6E264500CBEB92 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D41C0441B6E264500CBEB92 /* ExtensionDelegate.swift */; };
 		0D41C0471B6E264500CBEB92 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D41C0461B6E264500CBEB92 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
@@ -64,6 +65,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0D040C011B7722D1009C7510 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
 		0D41C01C1B6E264500CBEB92 /* WatchKit2-Sample-Pedometer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "WatchKit2-Sample-Pedometer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D41C01F1B6E264500CBEB92 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0D41C0211B6E264500CBEB92 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -76,7 +78,7 @@
 		0D41C0361B6E264500CBEB92 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0D41C0381B6E264500CBEB92 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0D41C03D1B6E264500CBEB92 /* WatchKit2-Sample-Pedometer WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "WatchKit2-Sample-Pedometer WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
-		0D41C0421B6E264500CBEB92 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		0D41C0421B6E264500CBEB92 /* PedometerInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PedometerInterfaceController.swift; sourceTree = "<group>"; };
 		0D41C0441B6E264500CBEB92 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
 		0D41C0461B6E264500CBEB92 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0D41C0481B6E264500CBEB92 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -87,6 +89,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0D040C021B7722D1009C7510 /* CoreMotion.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -103,6 +106,7 @@
 		0D41C0131B6E264500CBEB92 = {
 			isa = PBXGroup;
 			children = (
+				0D040C011B7722D1009C7510 /* CoreMotion.framework */,
 				0D41C01E1B6E264500CBEB92 /* WatchKit2-Sample-Pedometer */,
 				0D41C0321B6E264500CBEB92 /* WatchKit2-Sample-Pedometer WatchKit App */,
 				0D41C0411B6E264500CBEB92 /* WatchKit2-Sample-Pedometer WatchKit Extension */,
@@ -146,7 +150,7 @@
 		0D41C0411B6E264500CBEB92 /* WatchKit2-Sample-Pedometer WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
-				0D41C0421B6E264500CBEB92 /* InterfaceController.swift */,
+				0D41C0421B6E264500CBEB92 /* PedometerInterfaceController.swift */,
 				0D41C0441B6E264500CBEB92 /* ExtensionDelegate.swift */,
 				0D41C0461B6E264500CBEB92 /* Assets.xcassets */,
 				0D41C0481B6E264500CBEB92 /* Info.plist */,
@@ -216,6 +220,7 @@
 		0D41C0141B6E264500CBEB92 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0710;
 				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = XuQing1001;
 				TargetAttributes = {
@@ -295,7 +300,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0D41C0451B6E264500CBEB92 /* ExtensionDelegate.swift in Sources */,
-				0D41C0431B6E264500CBEB92 /* InterfaceController.swift in Sources */,
+				0D41C0431B6E264500CBEB92 /* PedometerInterfaceController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -526,6 +531,7 @@
 				0D41C04D1B6E264500CBEB92 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0D41C04F1B6E264500CBEB92 /* Build configuration list for PBXNativeTarget "WatchKit2-Sample-Pedometer WatchKit App" */ = {
 			isa = XCConfigurationList;
@@ -534,6 +540,7 @@
 				0D41C0511B6E264500CBEB92 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0D41C0531B6E264500CBEB92 /* Build configuration list for PBXNativeTarget "WatchKit2-Sample-Pedometer" */ = {
 			isa = XCConfigurationList;
@@ -542,6 +549,7 @@
 				0D41C0551B6E264500CBEB92 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

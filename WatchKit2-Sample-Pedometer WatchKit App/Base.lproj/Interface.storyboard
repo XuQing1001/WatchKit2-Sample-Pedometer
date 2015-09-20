@@ -1,15 +1,81 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="6221" systemVersion="13E28" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="8173.3" systemVersion="14E46" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6213"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="3733"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8142"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="8089"/>
     </dependencies>
     <scenes>
-        <!--Interface Controller-->
+        <!--Pedometer Interface Controller-->
         <scene sceneID="aou-V4-d1y">
             <objects>
-                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModuleProvider="target"/>
+                <controller id="AgC-eL-Hgc" customClass="PedometerInterfaceController" customModule="WatchKit2_Sample_Pedometer_WatchKit_Extension">
+                    <items>
+                        <group width="1" alignment="left" id="NeB-Vd-Ddb">
+                            <items>
+                                <label alignment="left" text="计步器" id="Tay-6d-fKl"/>
+                            </items>
+                        </group>
+                        <group width="1" alignment="left" id="A1D-Lc-1UG">
+                            <items>
+                                <label alignment="center" text="步" id="VTK-mZ-4qI"/>
+                                <group width="12" height="12" alignment="center" verticalAlignment="center" radius="7" id="pcP-bU-HYS">
+                                    <color key="backgroundColor" red="0.98823535442352295" green="0.95294123888015747" blue="0.21176472306251526" alpha="1" colorSpace="deviceRGB"/>
+                                </group>
+                                <label alignment="center" text="  距" id="sb0-3K-s5N"/>
+                                <group width="12" height="12" alignment="center" verticalAlignment="center" radius="7" id="2ie-zu-piL">
+                                    <color key="backgroundColor" red="0.99215692281723022" green="0.94117653369903564" blue="0.20784315466880798" alpha="1" colorSpace="deviceRGB"/>
+                                </group>
+                                <label alignment="center" text="  楼" id="Prq-BI-Rdz"/>
+                                <group width="12" height="12" alignment="center" verticalAlignment="center" radius="7" id="fhZ-zo-0FS">
+                                    <color key="backgroundColor" red="0.9960784912109375" green="0.9803922176361084" blue="0.21568629145622253" alpha="1" colorSpace="deviceRGB"/>
+                                </group>
+                            </items>
+                        </group>
+                        <group width="1" alignment="left" verticalAlignment="center" layout="vertical" id="hva-E4-qGe">
+                            <items>
+                                <group width="1" alignment="left" id="jjt-Zy-EA7">
+                                    <items>
+                                        <label alignment="left" text="你走了" id="YG3-Wy-Qge"/>
+                                        <label alignment="left" text="--" id="fKz-oN-HZG"/>
+                                        <label alignment="left" text="步" id="TkL-3q-cdq"/>
+                                    </items>
+                                </group>
+                                <group width="1" alignment="left" id="Wv7-gb-sgk">
+                                    <items>
+                                        <label alignment="left" text="行走距离" id="ZyJ-rr-MwL"/>
+                                        <label alignment="left" text="--" id="UQe-um-EqY"/>
+                                        <label alignment="left" text="米" id="l0T-to-EPX"/>
+                                    </items>
+                                </group>
+                                <group width="1" alignment="left" id="GUP-ao-xB3">
+                                    <items>
+                                        <label alignment="left" text="上了" id="9xv-jW-gnM"/>
+                                        <label alignment="left" text="--" id="FON-Ei-ShB"/>
+                                        <label alignment="left" text="层楼" id="xxQ-GI-QJI"/>
+                                    </items>
+                                </group>
+                                <group width="1" alignment="left" id="Rr5-Rh-pwQ">
+                                    <items>
+                                        <label alignment="left" text="下了" id="ui0-j4-i1u"/>
+                                        <label alignment="left" text="--" id="SDc-Ac-BgK"/>
+                                        <label alignment="left" text="层楼" id="cm6-8W-Zlr"/>
+                                    </items>
+                                </group>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="groupDistanceAvailable" destination="2ie-zu-piL" id="VvY-hK-HlH"/>
+                        <outlet property="groupFloorAvailable" destination="fhZ-zo-0FS" id="ITK-Jg-IRU"/>
+                        <outlet property="groupStepsAvailable" destination="pcP-bU-HYS" id="zhP-Cc-BDG"/>
+                        <outlet property="labelDistance" destination="UQe-um-EqY" id="8cc-GK-xR9"/>
+                        <outlet property="labelFloorsAscended" destination="FON-Ei-ShB" id="7H9-2y-IDJ"/>
+                        <outlet property="labelFloorsDescended" destination="SDc-Ac-BgK" id="4Pn-cO-y3p"/>
+                        <outlet property="labelSteps" destination="fKz-oN-HZG" id="S6j-vG-Nsf"/>
+                    </connections>
+                </controller>
             </objects>
+            <point key="canvasLocation" x="305" y="389"/>
         </scene>
     </scenes>
 </document>
